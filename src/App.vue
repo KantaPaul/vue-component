@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div class="container">
+      <announcement></announcement>
       <h1> {{ massage }} </h1>
       <contact-us></contact-us>
       <contact-us></contact-us>
@@ -41,6 +42,7 @@ export default {
 
 <style>
 body {
+  margin: 2% 0;
   font-size: 14px;
   font-weight: 400;
   color: #333333;

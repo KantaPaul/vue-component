@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Announcement from './components/Announcement'
 
 Vue.config.productionTip = false
 
@@ -35,6 +36,9 @@ Vue.component('counter', {
     </div>
   `
 })
+
+// global component
+Vue.component('announcement', Announcement)
 
 /* eslint-disable no-new */
 new Vue({
