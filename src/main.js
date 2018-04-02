@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Announcement from './components/Announcement'
+import moment from 'moment'
+import Article from './components/Article'
 
 Vue.config.productionTip = false
 
@@ -37,8 +39,17 @@ Vue.component('counter', {
   `
 })
 
+// moment filter
+Vue.filter('dates', function (value) {
+  return moment(value).format('MMMM Do')
+})
+
 // global component
 Vue.component('announcement', Announcement)
+Vue.component('myArticle', Article)
+
+// vue use
+Vue.use(require('vue-moment'))
 
 /* eslint-disable no-new */
 new Vue({

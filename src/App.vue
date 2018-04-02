@@ -7,6 +7,7 @@
       <contact-us></contact-us>
       <counter></counter>
       <about></about>
+      <myArticle></myArticle>
     </div>
   </div>
 </template>
@@ -41,9 +42,11 @@ export default {
 </script>
 
 <style>
+root {
+  font-size: 14px;
+}
 body {
   margin: 2% 0;
-  font-size: 14px;
   font-weight: 400;
   color: #333333;
   overflow-x: hidden;
