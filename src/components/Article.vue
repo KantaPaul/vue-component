@@ -25,5 +25,7 @@ export default {
 </script>
 
 <style scoped>
-
+  * {
+    color: #28b992d1;
+  }
 </style>
